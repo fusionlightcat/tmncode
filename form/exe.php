@@ -1,32 +1,27 @@
 
 <?php
-$mysqlhost="localhost"; // MySQL-Host angeben
 
-$mysqluser="root"; // MySQL-User angeben
+error_reporting(0); 
+$sqliteerrormsg = "eine fehlermeldung!"; 
+$db = sqlite_open('db.sqlite'); 
+if ($_GET['erstellen']=='true') 
+{ 
+$db1 = sqlite_open('db.sqlite', 0666, $sqliteerror); 
+sqlite_query($db, "CREATE TABLE telefonbuch (id INTEGER PRIMARY KEY, code, time)"; 
+sqlite_close($db); 
+$schritt1 = false; 
+echo "<h1>Erstellen der SQLite - Datenbank...</h1>"; 
+if (sqlite_open('telefonbuch.sqlite', '0666', $sqliteschitt)) 
+{ 
+$schritt1 = true; 
+echo "Na bitte! Die Datenbank wurde erfolgreich eingerichtet :-)"; 
+} 
+else 
+{ 
+echo "<br \><br \>Datenbank konnte leider <b>nicht</b> erfolgreich eingerichtet werden :'-(<br>Existiert sie vielleicht nicht schon ^.~"; 
+} 
 
-$mysqlpwd="aaa"; // Passwort angeben
 
-$mysqldb="tmonySQL"; // Gewuenschte Datenbank angeben
-
-$formcode = $_GET['element_1'];
-
-mysql_connect($mysqlhost, $mysqluser, $mysqlpwd) or die ("Verbindungsversuch fehlgeschlagen");
-$db = "tmonySQL";
-mysql_select_db($db);
-
-
-$select = "Select * from codes";
-$result = mysql_query($select);
-if($result){
- while($row = mysql_fetch_array($result)){
-	$time = $row['time'];
-	$code = $row['code'];
-
-	if($formcode == $code) {
-		$ok = "OK";
-		}
- }
-}
 ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

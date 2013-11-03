@@ -1,35 +1,10 @@
 
 <?php
-$mysqlhost="localhost"; // MySQL-Host angeben
 
-$mysqluser="root"; // MySQL-User angeben
-
-$mysqlpwd="aaa"; // Passwort angeben
-
-$mysqldb="tmonySQL"; // Gewuenschte Datenbank angeben
-
-$formcode = $_GET['element_1'];
-
-mysql_connect($mysqlhost, $mysqluser, $mysqlpwd) or die ("Verbindungsversuch fehlgeschlagen");
-$db = "tmonySQL";
-mysql_select_db($db);
+$db = sqlite_open('../sql/db.sqlite');
+sqlite_query($db, "CREATE TABLE list (id INTEGER PRIMARY KEY)");
 
 
-$select = "Select * from codes";
-$result = mysql_query($select);
-if($result){
- while($row = mysql_fetch_array($result)){
-	$time = $row['time'];
-	$code = $row['code'];
-
-	if($formcode == $code) {
-		$ok = "OK";
-		}
-	else {
-		$ok = "FUCK NO!!!";
-	}
- }
-}
 ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
