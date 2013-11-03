@@ -1,0 +1,17 @@
+#### TMNCode Alpha 1 ####
+
+1. Kopiere alle Dateien in "tmncode" in einen Ordner deiner Wahl!
+2. Erstelle .htaccess und .htpasswd Dateien zur Sicherung der Adminseite im Ordner "admin"
+3. Verbinde das Kindersicherungsskript mit den Dateien:
+	admin/ist.db -> gibt die verbleibende Zeit IN 5 MINUTEN SCHRITTEN an
+	admin/soll.db -> Ausgabe von TMNCode der zu verlängernden Zeit IN 5 MINUTEN SCHRITTEN
+	ist.info -> Zeigt die verbleibende Zeit auf der Startseite an. IN 5 MINUTEN SCHRITTEN!
+4. FERTIG! Rufe deinen Ordner im Webbrowser auf.
+
+INFORMATION:
+
+Die Funktion "Codeeingabe" ist noch in Entwicklung und funktioniert nicht.
+Nur die Manuelle Zeitverlängerung und das Interface laufen.
+
+########
+VALPHA_1
