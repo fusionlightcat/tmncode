@@ -1,8 +1,25 @@
 
 <?php
 
-$db = sqlite_open('../sql/db.sqlite');
-sqlite_query($db, "CREATE TABLE list (id INTEGER PRIMARY KEY)");
+error_reporting(0); 
+$sqliteerrormsg = "eine fehlermeldung!"; 
+$db = sqlite_open('db.sqlite'); 
+if ($_GET['erstellen']=='true') 
+{ 
+$db1 = sqlite_open('db.sqlite', 0666, $sqliteerror); 
+sqlite_query($db, "CREATE TABLE telefonbuch (id INTEGER PRIMARY KEY, code, time)"; 
+sqlite_close($db); 
+$schritt1 = false; 
+echo "<h1>Erstellen der SQLite - Datenbank...</h1>"; 
+if (sqlite_open('telefonbuch.sqlite', '0666', $sqliteschitt)) 
+{ 
+$schritt1 = true; 
+echo "Na bitte! Die Datenbank wurde erfolgreich eingerichtet :-)"; 
+} 
+else 
+{ 
+echo "<br \><br \>Datenbank konnte leider <b>nicht</b> erfolgreich eingerichtet werden :'-(<br>Existiert sie vielleicht nicht schon ^.~"; 
+} 
 
 
 ?> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

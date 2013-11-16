@@ -126,7 +126,7 @@ print "Nutzungszeit aktuell noch: " . $aist . " Minuten<br>"
 					<li class="buttons">
 			    <input type="hidden" name="form_id" value="719091" />
 			    
-				<a onclick="document.form1.submit()" class="link">OK</a>
+				<a onclick="document.form1.submit()" class="link">OK</a> <a href="./index.php" class="link">Zurück</a>
 		</li>
 			</ul>
 		</form>	

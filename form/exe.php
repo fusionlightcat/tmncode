@@ -58,7 +58,7 @@ echo "<br \><br \>Datenbank konnte leider <b>nicht</b> erfolgreich eingerichtet 
 		</li>
 			</ul>
 		<div id="footer">
-			Powered by <a href="../index.php">TMNCode</a> 2013 by Arthur Schüler
+			Powered by <a href="../index.php">TMNCode</a> 2013 by fusionsoftware
 		</div>
 	</div>
 	<img id="bottom" src="../jpg/bottom.png" alt="">

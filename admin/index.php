@@ -70,7 +70,8 @@
 					<li id="li_1" >
 		<div align="center"> 
 		<a href="./manual.php" class="link">Zeit Manuell</a><br><br>
-		<a href="../index.php" class="link">Startseite</a>
+		<a href="../index.php" class="link">Startseite</a><br><br>
+		<a href="./listcodes.php" class="link">Zeige Codes</a>
 		</div> 
 		</li>
 			
@@ -81,7 +82,7 @@
 			</ul>
 		</form>	
 		<div id="footer">
-			Powered by <a href="./index.php">TMNCode</a> 2013 by Arthur Schüler
+			Powered by <a href="./index.php">TMNCode</a> 2013 by fusionsoftware
 		</div>
 	</div>
 	<img id="bottom" src="../jpg/bottom.png" alt="">

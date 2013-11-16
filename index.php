@@ -80,7 +80,7 @@
 			</ul>
 		</form>	
 		<div id="footer">
-			Powered by <a href="./index.php">TMNCode</a> 2013 by Arthur Schüler <a href="./admin/index.php">Admin</a>
+			Powered by <a href="./index.php">TMNCode</a> 2013 by fusionsoftware <a href="./admin/index.php">Admin</a>
 		</div>
 	</div>
 	<img id="bottom" src="./jpg/bottom.png" alt="">
